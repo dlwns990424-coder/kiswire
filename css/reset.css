@@ -1,7 +1,10 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
+/* reset.css */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
 html,
 body,
@@ -91,12 +94,10 @@ video {
   font: inherit;
   vertical-align: baseline;
   color: inherit;
-  font-family: "Pretendard";
   text-decoration: none;
   list-style: none;
-  box-sizing: border-box;
 }
-/* HTML5 display-role reset for older browsers */
+
 article,
 aside,
 details,
@@ -110,31 +111,34 @@ nav,
 section {
   display: block;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   line-height: 1;
+  font-family: "Pretendard", sans-serif;
+  overflow-x: hidden;
 }
+
 ol,
 ul {
   list-style: none;
 }
-blockquote,
-q {
-  quotes: none;
-}
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-  content: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
+
 img {
+  display: block;
   width: 100%;
 }
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
 button {
   cursor: pointer;
 }
