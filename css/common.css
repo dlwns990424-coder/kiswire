@@ -19,8 +19,11 @@ header {
   position: fixed;
   z-index: 99;
   background: #fff;
+  transition: transform 0.3s ease;
 }
-
+header.header_hide {
+  transform: translateY(-100%);
+}
 .main_menu {
   display: flex;
   justify-content: space-between;
@@ -28,22 +31,47 @@ header {
 }
 .main_menu li {
   font-size: 18px;
+  transition: 0.3s;
+  position: relative;
+}
+.h_line {
+  transition: 0.3s;
+  width: 0;
+  height: 2px;
+  background: #002257;
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+}
+.main_menu li:hover {
+  color: #002257;
+}
+.main_menu li:hover .h_line {
+  width: 100%;
 }
 .utill {
   display: flex;
+  align-items: center;
   gap: 20px;
 }
-header button {
-  border: none;
-  background: none;
+.utill a {
+  display: block;
   font-size: 18px;
+  padding: 8px 16px;
+  border-radius: 8px;
 }
 .langs {
   cursor: pointer;
 }
+.utill a:hover {
+  background: #002257;
+  color: #fff;
+}
 /* header end  */
 
 .main_btn {
+  display: inline-block;
+  line-height: 50px;
   width: 150px;
   height: 50px;
   text-align: center;
@@ -138,3 +166,69 @@ footer {
 }
 
 /* footer end  */
+
+/* scroll event */
+.hero_title h1,
+.hero_title p,
+.section_2 .sec_title_2,
+.section_3 .sec_title,
+.section_3 .con_3,
+.section_4 .sec_title_4,
+.section_5 .sec_title,
+.section_5 .sec_img_5,
+.section_6 .sec_title_6,
+.section_6 .con_wrap_6 {
+  opacity: 0;
+  transform: translateY(40px);
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s ease;
+}
+
+.hero_section.is_active .hero_title h1 {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hero_section.is_active .hero_title p {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.2s;
+}
+
+.section_2.is_active .sec_title_2,
+.section_4.is_active .sec_title_4,
+.section_6.is_active .sec_title_6,
+.section_6.is_active .con_wrap_6 {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.section_3.is_active .sec_title,
+.section_5.is_active .sec_title {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.section_3.is_active .sec_title p,
+.section_5.is_active .sec_title p {
+  transition-delay: 0.2s;
+}
+
+.section_3.is_active .con_3,
+.section_5.is_active .sec_img_5 {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.section_3 .con_3:nth-child(-n + 3) {
+  transition-delay: 0.2s;
+}
+
+.section_3 .con_3:nth-child(n + 4) {
+  transition-delay: 0.4s;
+}
+
+.section_5.is_active .sec_img_5 {
+  transition-delay: 0.2s;
+}
