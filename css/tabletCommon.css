@@ -1,0 +1,57 @@
+@media (max-width: 1279px) {
+  h1 {
+    font-size: 54px;
+    letter-spacing: -0.01em;
+    font-weight: 700;
+  }
+  h2 {
+    font-size: 40px;
+    letter-spacing: -0.01em;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  h3 {
+    font-size: 30px;
+    letter-spacing: -0.01em;
+    font-weight: 600;
+  }
+  h4 {
+    font-size: 24px;
+    letter-spacing: -0.01em;
+    font-weight: 500;
+  }
+
+  .sec_title > p {
+    width: 500px;
+    font-size: 18px;
+    line-height: 26px;
+    color: #666666;
+    margin-bottom: 40px;
+  }
+
+  header {
+    padding: 0 40px;
+  }
+
+  header .logo {
+    width: 100px;
+    display: block;
+  }
+
+  header nav,
+  header .utill {
+    display: none;
+  }
+
+  .ham_btn {
+    cursor: pointer;
+    width: 30px;
+    height: 20px;
+    display: block;
+    transition: 0.3s;
+  }
+  .ham_btn img {
+    width: 100%;
+  }
+  /* header end  */
+}

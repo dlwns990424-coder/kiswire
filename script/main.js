@@ -88,3 +88,11 @@ window.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
+const family = document.querySelector(".f_site");
+const familySite = document.querySelector(".f_site_list");
+const familyHandler = (e) => {
+  familySite.classList.toggle("f_active");
+};
+
+family.addEventListener("click", familyHandler);
