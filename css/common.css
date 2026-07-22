@@ -1,5 +1,6 @@
 .wrap {
   width: 100%;
+  position: relative;
 }
 .section {
   width: 100%;
@@ -73,6 +74,7 @@ header.header_hide {
 .main_menu_tab {
   display: none;
 }
+
 @media (max-width: 1450px) {
   .main_menu {
     gap: 50px;
@@ -92,6 +94,22 @@ header.header_hide {
   border-radius: 6px;
 }
 .main_btn:hover {
+  border: none;
+  color: #fff;
+  background: #002257;
+}
+.mb_btn {
+  display: none;
+  line-height: 50px;
+  width: 250px;
+  height: 50px;
+  text-align: center;
+  background: none;
+  border: 1px solid #002257;
+  color: #002257;
+  border-radius: 6px;
+}
+.mb_btn:hover {
   border: none;
   color: #fff;
   background: #002257;

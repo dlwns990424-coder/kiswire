@@ -105,6 +105,9 @@ const swiper = new Swiper(".swiper", {
   loop: false,
   spaceBetween: 30,
   breakpoints: {
+    0: {
+      slidesPerView: 1.2,
+    },
     768: {
       slidesPerView: 2.4,
     },
@@ -115,14 +118,23 @@ const swiper = new Swiper(".swiper", {
     el: ".swiper-pagination",
   },
 
-  // Navigation arrows
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-
   // And if we need scrollbar
   scrollbar: {
     el: ".swiper-scrollbar",
   },
+});
+
+// menu
+const hamBtn = document.querySelector(".ham_btn");
+const mainMenu = document.querySelector(".main_menu_tab");
+const closeBtn = document.querySelector(".tab_x");
+
+// 메뉴 열기
+hamBtn.addEventListener("click", () => {
+  mainMenu.classList.add("active");
+});
+
+// 메뉴 닫기
+closeBtn.addEventListener("click", () => {
+  mainMenu.classList.remove("active");
 });

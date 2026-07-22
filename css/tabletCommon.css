@@ -1,4 +1,4 @@
-@media (max-width: 1279px) {
+@media (min-width: 768px) and (max-width: 1279px) {
   h1 {
     font-size: 54px;
   }
@@ -15,6 +15,7 @@
 
   header {
     padding: 0 40px;
+    height: 60px;
   }
 
   header .logo {
@@ -37,12 +38,30 @@
     width: 100%;
   }
   .main_menu_tab {
-    position: absolute;
+    display: block;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100dvh;
+    z-index: 999;
+
+    background: #ffffffcb;
+    backdrop-filter: blur(30px);
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(100%);
+    transition: 0.4s;
+  }
+  .main_menu_tab.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+  }
+  .logo {
     display: block;
+    width: 100px;
   }
   .tab_header {
     width: 100%;
@@ -60,9 +79,35 @@
   }
   .tab_lang {
     width: 22px;
+    cursor: pointer;
   }
   .tab_x {
     width: 30px;
+    cursor: pointer;
+  }
+  .t_main_menu {
+    padding: 100px 40px 0px 40px;
+  }
+  .t_main_menu ul {
+    height: 60dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 30px;
+    font-weight: 500;
+  }
+  .t_main_menu ul li {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    color: #666;
+  }
+  .t_main_menu ul li:hover {
+    color: #000;
+  }
+  .under_arrow {
+    display: block;
+    width: 24px;
   }
   /* header end  */
 
@@ -84,6 +129,8 @@
     line-height: 48px;
   }
   .sec_title p {
+    max-width: 500px;
+    width: 100%;
     font-size: 18px;
     line-height: 30px;
     margin: 0;
