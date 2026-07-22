@@ -70,6 +70,9 @@ header.header_hide {
 .ham_btn {
   display: none;
 }
+.main_menu_tab {
+  display: none;
+}
 @media (max-width: 1450px) {
   .main_menu {
     gap: 50px;
@@ -129,14 +132,18 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  font-weight: 200;
 }
 .f_logo {
   width: 140px;
 }
 .footer_con_wrap {
+  border-bottom: 1px solid #999999;
+}
+.f_up_area {
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid #999999;
   padding-bottom: 30px;
 }
 .footer_info {
@@ -150,18 +157,19 @@ footer {
   align-items: end;
   gap: 50px;
 }
-.corp_area > ul {
+.f_sub_menu {
   display: flex;
-  justify-content: space-between;
+
   align-items: center;
   gap: 30px;
 }
-.corp_area > ul > li {
+.f_sub_menu > li {
   border-left: 1px solid #999999;
   padding-left: 30px;
 }
-.corp_area > ul > li:first-child {
+.f_sub_menu > li:first-child {
   border: none;
+  padding-left: 0;
 }
 .f_site {
   width: 150px;
@@ -215,6 +223,9 @@ footer {
 .family ul li:hover {
   background: #002257;
   color: #fff;
+}
+.f_sub_menu_t {
+  display: none;
 }
 /* footer end  */
 

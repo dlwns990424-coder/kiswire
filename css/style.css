@@ -1,7 +1,3 @@
-@import url(reset.css);
-@import url(common.css);
-@import url(tablet.css);
-@import url(tabletCommon.css);
 /* hero section */
 
 .hero_section {
@@ -150,6 +146,9 @@
 .con_3:hover img {
   transform: scale(1.05);
 }
+.swiper {
+  display: none !important;
+}
 
 /* section 3 end */
 
@@ -239,6 +238,9 @@
 
 .con_5 h2 {
   margin-bottom: 10px;
+}
+.sec_btn_5_t {
+  display: none;
 }
 
 /* section 5 end */

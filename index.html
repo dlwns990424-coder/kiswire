@@ -4,7 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>고려제강</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/tabletCommon.css" />
+    <link rel="stylesheet" href="css/tablet.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <div class="wrap">
@@ -38,14 +46,29 @@
         </nav>
         <div class="utill">
           <div class="langs">
-            <img src="img/lang.png" alt="언어선택" />
+            <img src="img/lang.png" alt="언어선택 아이콘" />
           </div>
           <a href="#">Contact Us</a>
         </div>
         <div class="ham_btn">
           <img src="img/ham_menu.png" alt="메뉴 아이콘" />
         </div>
-      </header>
+      </div>
+    </header>
+    <div class="main_menu_tab">
+      <div class="tab_header">
+        <a class="logo" href="#">
+          <img src="img/logo.png" alt="고려제강 로고" />
+        </a>
+        <div class="tab_utill">
+          <div class="tab_utill_img tab_lang">
+            <img src="img/lang.png" alt="언어선택 아이콘" />
+          </div>
+          <div class="tab_utill_img tab_x">
+            <img src="img/x.png" alt="취소 아이콘" />
+          </div>
+        </div>
+      </div>
       <section class="hero_section">
         <div class="hero_img">
           <img src="img/Hero_Img.png" alt="고려제강 hero img" />
@@ -59,7 +82,7 @@
         </div>
       </section>
       <section class="section section_2">
-        <div class="sec_title_2">
+        <div class="sec_title_2 sec_title_t">
           <div class="sec_title">
             <h2>1945년부터 이어온 신뢰와 도전의 역사</h2>
             <p>
@@ -70,7 +93,7 @@
           </div>
           <a href="#" class="main_btn">View more →</a>
         </div>
-        <div class="sec_img_2">
+        <div class="sec_img_2 sec_img_t">
           <img src="img/section_2_img.png" alt="고려제강 공장 img" />
         </div>
       </section>
@@ -122,9 +145,54 @@
             </a>
           </div>
         </div>
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide con_3">
+              <a href="#">
+                <h3>교랑&건설</h3>
+                <img src="img/section_3_1.png" alt="교랑&건설" />
+              </a>
+            </div>
+            <div class="swiper-slide con_3">
+              <a href="#">
+                <h3>자동차</h3>
+                <img src="img/section_3_2.png" alt="자동차" />
+              </a>
+            </div>
+            <div class="swiper-slide con_3">
+              <a href="#">
+                <h3>재생에너지</h3>
+                <img src="img/section_3_3.png" alt="재생에너지" />
+              </a>
+            </div>
+            <div class="swiper-slide con_3">
+              <a href="#">
+                <h3>해양·플랜트</h3>
+                <img src="img/section_3_4.png" alt="해양·플랜트" />
+              </a>
+            </div>
+            <div class="swiper-slide con_3">
+              <a href="#">
+                <h3>산업설비</h3>
+                <img src="img/section_3_5.png" alt="산업설비" />
+              </a>
+            </div>
+            <div class="swiper-slide con_3">
+              <a href="#">
+                <h3>전력·통신</h3>
+                <img src="img/section_3_6.png" alt="전력·통신" />
+              </a>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+
+          <div class="swiper-scrollbar"></div>
+        </div>
       </section>
       <section class="section section_4">
-        <div class="sec_title_4">
+        <div class="sec_title_4 sec_title_t">
           <div class="sec_title">
             <h2>Research & Development</h2>
             <p>
@@ -134,17 +202,20 @@
           </div>
           <a href="#" class="main_btn">View more →</a>
         </div>
-        <div class="sec_img_4">
+        <div class="sec_img_4 sec_img_t">
           <img src="img/section_4.png" alt="연구원" />
         </div>
       </section>
       <section class="section_5 section">
-        <div class="sec_title_5 sec_title">
-          <h2>Global Network</h2>
-          <p>
-            고려제강은 전 세계 80여 개국에 제품을 공급하며, 14개의 글로벌 거점을
-            통해 고객과 함께 성장하고 있습니다.
-          </p>
+        <div class="sec_title_5 sec_title_t">
+          <div class="sec_title">
+            <h2>Global Network</h2>
+            <p>
+              고려제강은 전 세계 80여 개국에 제품을 공급하며, 14개의 글로벌
+              거점을 통해 고객과 함께 성장하고 있습니다.
+            </p>
+          </div>
+          <a href="#" class="main_btn sec_btn_5_t">View more →</a>
         </div>
         <div class="sec_img_5">
           <img src="img/section_5.png" alt="글로벌 네트워크" />
@@ -163,13 +234,17 @@
             </div>
           </div>
         </div>
-        <a href="#" class="main_btn">View more →</a>
+        <a href="#" class="main_btn sec_btn_5">View more →</a>
       </section>
       <section class="section_6 section">
-        <div class="sec_title_6 sec_title">
-          <h2>News</h2>
-          <p>고려제강의 최신 소식과 기술 및 기업 활동을 확인해 보세요.</p>
+        <div class="sec_title_6 sec_title_t">
+          <div class="sec_title">
+            <h2>News</h2>
+            <p>고려제강의 최신 소식과 기술 및 기업 활동을 확인해 보세요.</p>
+          </div>
+          <a href="#" class="main_btn">View more →</a>
         </div>
+
         <ul class="con_wrap_6">
           <li class="con_6">
             <a href="#">
@@ -212,43 +287,51 @@
           </a>
         </div>
         <div class="footer_con_wrap">
-          <div class="footer_info">
-            <p>본사 : 부산광역시 수영구 구락로 141번길 37</p>
-            <p>T. 051-760-1700</p>
-            <p>F. 051-760-1980</p>
-          </div>
-          <div class="footer_info">
-            <p>서울사무소 : 서울 중구 삼일대로 363</p>
-            <p>T. 02-316-6114</p>
-            <p>F. 02-316-6280</p>
-          </div>
-          <div class="corp_area">
-            <ul>
-              <li><a href="#">개인정보 처리방침</a></li>
-              <li><a href="#">지속가능경영</a></li>
-              <li><a href="#">Contact Us</a></li>
-              <li><a href="#">Sitemap</a></li>
-            </ul>
-            <div class="family">
-              <button class="f_site">Family Site <span> ▲</span></button>
-              <ul class="f_site_list">
-                <li>
-                  <a href="#">KAT</a>
-                </li>
-                <li>
-                  <a href="#">고려제강기념관</a>
-                </li>
-                <li>
-                  <a href="#">F1963 도서관</a>
-                </li>
+          <div class="f_up_area">
+            <div class="footer_info">
+              <p>본사 : 부산광역시 수영구 구락로 141번길 37</p>
+              <p>T. 051-760-1700</p>
+              <p>F. 051-760-1980</p>
+            </div>
+            <div class="footer_info">
+              <p>서울사무소 : 서울 중구 삼일대로 363</p>
+              <p>T. 02-316-6114</p>
+              <p>F. 02-316-6280</p>
+            </div>
+            <div class="corp_area">
+              <ul class="f_sub_menu">
+                <li><a href="#">개인정보 처리방침</a></li>
+                <li><a href="#">지속가능경영</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Sitemap</a></li>
               </ul>
+              <div class="family">
+                <button class="f_site">Family Site <span> ▲</span></button>
+                <ul class="f_site_list">
+                  <li>
+                    <a href="#">KAT</a>
+                  </li>
+                  <li>
+                    <a href="#">고려제강기념관</a>
+                  </li>
+                  <li>
+                    <a href="#">F1963 도서관</a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
+          <ul class="f_sub_menu_t">
+            <li><a href="#">개인정보 처리방침</a></li>
+            <li><a href="#">지속가능경영</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Sitemap</a></li>
+          </ul>
         </div>
         <p>©KISWIRE LTD. ALL RIGHTS RESERVED.</p>
       </footer>
     </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script/main.js"></script>
   </body>
 </html>

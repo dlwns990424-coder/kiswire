@@ -1,32 +1,16 @@
 @media (max-width: 1279px) {
   h1 {
     font-size: 54px;
-    letter-spacing: -0.01em;
-    font-weight: 700;
   }
   h2 {
     font-size: 40px;
-    letter-spacing: -0.01em;
-    font-weight: 700;
     margin-bottom: 20px;
   }
   h3 {
     font-size: 30px;
-    letter-spacing: -0.01em;
-    font-weight: 600;
   }
   h4 {
     font-size: 24px;
-    letter-spacing: -0.01em;
-    font-weight: 500;
-  }
-
-  .sec_title > p {
-    width: 500px;
-    font-size: 18px;
-    line-height: 26px;
-    color: #666666;
-    margin-bottom: 40px;
   }
 
   header {
@@ -35,7 +19,6 @@
 
   header .logo {
     width: 100px;
-    display: block;
   }
 
   header nav,
@@ -53,5 +36,84 @@
   .ham_btn img {
     width: 100%;
   }
+  .main_menu_tab {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100dvh;
+    display: block;
+  }
+  .tab_header {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+  }
+  .tab_utill {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+  .tab_lang {
+    width: 22px;
+  }
+  .tab_x {
+    width: 30px;
+  }
   /* header end  */
+
+  .section {
+    padding: 80px 40px 50px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .sec_title_t {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .sec_title {
+    width: 500px;
+  }
+  .sec_title h2 {
+    line-height: 48px;
+  }
+  .sec_title p {
+    font-size: 18px;
+    line-height: 30px;
+    margin: 0;
+  }
+  .sec_img_t {
+    width: 100%;
+    height: 400px;
+  }
+  .con_wrap_3 {
+    display: none;
+  }
+
+  /* footer  */
+  footer {
+    padding: 50px 40px 80px 40px;
+  }
+  .f_sub_menu {
+    display: none !important;
+  }
+  .f_sub_menu_t {
+    display: flex !important;
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+  .f_sub_menu_t > li {
+    border-left: 1px solid #999999;
+    padding-left: 20px;
+  }
+  .f_sub_menu_t > li:first-child {
+    border: none;
+    padding-left: 0;
+  }
 }
