@@ -154,7 +154,7 @@
   transform: scale(1.05);
 }
 .swiper {
-  display: none;
+  display: none !important;
 }
 
 /* section 3 end */
@@ -299,6 +299,9 @@
 
 .news_title h4 {
   min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .news_title p {
