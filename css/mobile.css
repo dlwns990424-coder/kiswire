@@ -98,16 +98,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 16px;
+    gap: 26px;
   }
 
   .tab_lang {
-    width: 20px;
+    width: 22px;
     cursor: pointer;
   }
 
   .tab_x {
-    width: 26px;
+    width: 28px;
     cursor: pointer;
   }
 
@@ -278,10 +278,8 @@
   }
 
   .section_3 .swiper-slide {
-    width: auto;
-    height: 187px;
+    height: 210px;
   }
-
   .section_3 .con_3 h3 {
     top: 25px;
     left: 25px;

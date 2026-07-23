@@ -248,23 +248,37 @@ footer {
 /* footer end  */
 
 /* scroll event */
+/* scroll event */
+
+/* 초기 상태 */
 .hero_title h1,
 .hero_title p,
 .section_2 .sec_title_2,
+.section_2 .sec_img_2,
+.section_2 .mb_btn,
 .section_3 .sec_title,
 .section_3 .con_3,
+.section_3 .swiper-scrollbar,
 .section_4 .sec_title_4,
+.section_4 .sec_img_4,
+.section_4 .mb_btn,
 .section_5 .sec_title,
 .section_5 .sec_img_5,
+.section_5 .sec_btn_5,
+.section_5 .sec_btn_5_t,
+.section_5 .mb_btn,
 .section_6 .sec_title_6,
-.section_6 .con_wrap_6 {
+.section_6 .con_wrap_6,
+.section_6 .mb_btn {
   opacity: 0;
   transform: translateY(40px);
+
   transition:
     opacity 0.7s ease,
     transform 0.7s ease;
 }
 
+/* hero */
 .hero_section.is_active .hero_title h1 {
   opacity: 1;
   transform: translateY(0);
@@ -276,39 +290,120 @@ footer {
   transition-delay: 0.2s;
 }
 
-.section_2.is_active .sec_title_2,
-.section_4.is_active .sec_title_4,
-.section_6.is_active .sec_title_6,
-.section_6.is_active .con_wrap_6 {
+/* section 2 */
+.section_2.is_active .sec_title_2 {
   opacity: 1;
   transform: translateY(0);
 }
 
-.section_3.is_active .sec_title,
+.section_2.is_active .sec_img_2 {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.2s;
+}
+
+.section_2.is_active .mb_btn {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.4s;
+}
+
+/* section 3 초기 상태 */
+.section_3 .sec_title,
+.section_3 .con_wrap_3 .con_3,
+.section_3 .swiper .swiper-slide,
+.section_3 .swiper-scrollbar {
+  opacity: 0;
+  transform: translateY(40px);
+
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s ease;
+}
+
+/* section 3 활성화 */
+.section_3.is_active .sec_title {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.section_3.is_active .con_wrap_3 .con_3 {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.section_3.is_active .swiper .swiper-slide {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.2s;
+}
+
+.section_3.is_active .swiper-scrollbar {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.4s;
+}
+
+/* PC 카드만 순차 등장 */
+.section_3 .con_wrap_3 .con_3:nth-child(-n + 3) {
+  transition-delay: 0.2s;
+}
+
+.section_3 .con_wrap_3 .con_3:nth-child(n + 4) {
+  transition-delay: 0.4s;
+}
+/* section 4 */
+.section_4.is_active .sec_title_4 {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.section_4.is_active .sec_img_4 {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.2s;
+}
+
+.section_4.is_active .mb_btn {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.4s;
+}
+
+/* section 5 */
 .section_5.is_active .sec_title {
   opacity: 1;
   transform: translateY(0);
 }
 
-.section_3.is_active .sec_title p,
-.section_5.is_active .sec_title p {
+.section_5.is_active .sec_img_5 {
+  opacity: 1;
+  transform: translateY(0);
   transition-delay: 0.2s;
 }
 
-.section_3.is_active .con_3,
-.section_5.is_active .sec_img_5 {
+.section_5.is_active .sec_btn_5,
+.section_5.is_active .sec_btn_5_t,
+.section_5.is_active .mb_btn {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.4s;
+}
+
+/* section 6 */
+.section_6.is_active .sec_title_6 {
   opacity: 1;
   transform: translateY(0);
 }
 
-.section_3 .con_3:nth-child(-n + 3) {
+.section_6.is_active .con_wrap_6 {
+  opacity: 1;
+  transform: translateY(0);
   transition-delay: 0.2s;
 }
 
-.section_3 .con_3:nth-child(n + 4) {
+.section_6.is_active .mb_btn {
+  opacity: 1;
+  transform: translateY(0);
   transition-delay: 0.4s;
-}
-
-.section_5.is_active .sec_img_5 {
-  transition-delay: 0.2s;
 }

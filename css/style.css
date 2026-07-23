@@ -1,4 +1,11 @@
 /* hero section */
+.wrap {
+  min-height: 100vh;
+
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.82), rgba(255, 255, 255, 0.82)),
+    url("../img/bg_img.PNG") center / cover no-repeat fixed;
+}
 
 .hero_section {
   width: 100%;
@@ -147,7 +154,7 @@
   transform: scale(1.05);
 }
 .swiper {
-  display: none !important;
+  display: none;
 }
 
 /* section 3 end */
